@@ -8,7 +8,22 @@
 module.exports = {
 
   attributes: {
-
+    identificacion: {
+      type:'string'
+    },
+    descripcion: {
+      type:'string'
+    },
+    estado: {
+      type:'boolean'
+    },
+    idTipoUH: {
+      model:'TipoUH'
+    },
+    cuentasXCobrar:{
+      collection:'CuentasXCobrar',
+      via:'idUH'
+    }
   }
 };
 

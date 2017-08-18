@@ -8,7 +8,33 @@
 module.exports = {
 
   attributes: {
-
+    connection: 'localDiskDb',
+    attributes: {
+      identificador:{
+        type:'string'
+      },
+      descripcion: {
+        type:'string'
+      },
+      mes: {
+        type:'string'
+      },
+      anio: {
+        type:'number'
+      },
+      fechapago: {
+        type:'string'
+      },
+      valor: {
+        type:'number'
+      },
+      estado: {
+        type:'boolean'
+      },
+      idUH:{
+        model:'UnidadHabitacional'
+      }
+    }
   }
 };
 

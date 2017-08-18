@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+    idUsuario: {
+      model:'Usuario'
+    },
+    idCondominio: {
+      model:'Condominio'
+    }
   }
 };
 

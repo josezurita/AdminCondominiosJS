@@ -8,7 +8,16 @@
 module.exports = {
 
   attributes: {
-
+    nombre: {
+      type:'string'
+    },
+    descripcion: {
+      type:'string'
+    },
+    unidadesHabitacionales:{
+      collection:'UnidadHabitacional',
+      via:'idTipoUH'
+    }
   }
 };
 

@@ -6,9 +6,28 @@
  */
 
 module.exports = {
-
+  connection: 'localDiskDb',
   attributes: {
-
+    nombre:{
+      type:'string'
+    },
+    direccion: {
+      type:'string'
+    },
+    telefono: {
+      type:'string'
+    },
+    balance: {
+      type:'number'
+    },
+    usuariosAdministradores: {
+      collection:'UsuarioCondominio',
+      via:'idCondominio'
+    },
+    cuentasXPagar: {
+      collection:'CuentasXPagar',
+      via:'idCondominio'
+    }
   }
 };
 
