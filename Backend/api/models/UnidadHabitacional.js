@@ -7,6 +7,7 @@
 
 module.exports = {
 
+  connection: 'localDiskDb',
   attributes: {
     identificacion: {
       type:'string'
@@ -20,10 +21,10 @@ module.exports = {
     idTipoUH: {
       model:'TipoUH'
     },
-    cuentasXCobrar: {
-      collection:'CuentasXCobrar',
-      via:'idUH'
-    },
+    //cuentas: {
+    //  collection:'CuentasXCobrar',
+    //  via:'idUnidad'
+    //},
     idCondominio: {
       model:'Condominio'
     }

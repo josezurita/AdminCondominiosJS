@@ -28,11 +28,11 @@ module.exports = {
       valor: {
         type:'number'
       },
-      estado: {
-        type:'boolean'
-      },
-      idUH:{
+      idUnidad: {
         model:'UnidadHabitacional'
+      },
+      estado: {
+        type:'booblean'
       }
     }
   }

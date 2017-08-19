@@ -7,8 +7,18 @@
 
 module.exports = {
 
+  connection: 'localDiskDb',
   attributes: {
-
+    nombre: {
+      type:'string'
+    },
+    descripcion: {
+      type:'string'
+    },
+    cuentasXPagar: {
+      collection:'CuentasXPagar',
+      via:'idProveedor'
+    }
   }
 };
 
