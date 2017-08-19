@@ -8,6 +8,7 @@ import {ModuloDeRutas} from "./routes";
 import { CuentasXPagarComponent } from './Componentes/cuentas-xpagar/cuentas-xpagar.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { UnidadesHabitacionalesComponent } from './Componentes/unidades-habitacionales/unidades-habitacionales.component';
+import { CuentasXcobrarComponent } from './Componentes/cuentas-xcobrar/cuentas-xcobrar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UnidadesHabitacionalesComponent } from './Componentes/unidades-habitaci
     CondominioComponent,
     CuentasXPagarComponent,
     LoginComponent,
-    UnidadesHabitacionalesComponent
+    UnidadesHabitacionalesComponent,
+    CuentasXcobrarComponent
   ],
   imports: [
     BrowserModule,
