@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { CondominioComponent } from './Componentes/condominio/condominio.component';
 import {ModuloDeRutas} from "./routes";
+import { CuentasXPagarComponent } from './Componentes/cuentas-xpagar/cuentas-xpagar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    CondominioComponent
+    CondominioComponent,
+    CuentasXPagarComponent
   ],
   imports: [
     BrowserModule,
