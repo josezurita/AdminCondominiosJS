@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class InicioComponent implements OnInit {
+export class LoginComponent implements OnInit {
+  correo:string;
+  password:string;
 
   constructor(private router:Router,
               private rutaActiva:ActivatedRoute) { }
@@ -19,12 +21,8 @@ export class InicioComponent implements OnInit {
         }
       )
   }
-
-  volverInicio(){
-    this.router.navigate(["inicio"])
-  }
-  volverLoguin(){
-    this.router.navigate(["login"])
-  }
+  loguearse(){
+  this.router.navigate(["inicio"])
+}
 
 }

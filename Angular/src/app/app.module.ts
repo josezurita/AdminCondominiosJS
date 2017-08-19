@@ -6,13 +6,17 @@ import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { CondominioComponent } from './Componentes/condominio/condominio.component';
 import {ModuloDeRutas} from "./routes";
 import { CuentasXPagarComponent } from './Componentes/cuentas-xpagar/cuentas-xpagar.component';
+import { LoginComponent } from './Componentes/login/login.component';
+import { UnidadesHabitacionalesComponent } from './Componentes/unidades-habitacionales/unidades-habitacionales.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     CondominioComponent,
-    CuentasXPagarComponent
+    CuentasXPagarComponent,
+    LoginComponent,
+    UnidadesHabitacionalesComponent
   ],
   imports: [
     BrowserModule,
