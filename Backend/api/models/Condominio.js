@@ -27,6 +27,10 @@ module.exports = {
     cuentasXPagar: {
       collection:'CuentasXPagar',
       via:'idCondominio'
+    },
+    unidadesHabitacionales: {
+      collection:'UnidadHabitacional',
+      via:'idCondominio'
     }
   }
 };

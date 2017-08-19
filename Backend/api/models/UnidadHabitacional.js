@@ -20,9 +20,12 @@ module.exports = {
     idTipoUH: {
       model:'TipoUH'
     },
-    cuentasXCobrar:{
+    cuentasXCobrar: {
       collection:'CuentasXCobrar',
       via:'idUH'
+    },
+    idCondominio: {
+      model:'Condominio'
     }
   }
 };
